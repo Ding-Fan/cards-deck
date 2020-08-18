@@ -40,6 +40,7 @@ banner.addEventListener("click", () => {
 });
 
 function playGirlHeh() {
-  let heh = new Audio("./assets/sound/NFF-girl-heh.wav");
+  let audioUrl = require("./assets/sound/NFF-girl-heh.wav");
+  let heh = new Audio(audioUrl);
   heh.play();
 }

@@ -12,13 +12,13 @@ body {
 
 .container {
   .banner {
-    cursor: pointer;
     .main {
       font-size: 50px;
     }
-    background-color: blue;
-    
-    color: orange;
+    font-family: "Comfortaa", cursive;
+    cursor: pointer;
+    color: #d62828;
+    background-color: #003049;
     text-align: center;
     padding: 30px;
   }
@@ -32,6 +32,7 @@ body {
     .card {
       width: 200px;
       height: 300px;
+      padding: 20px;
       background-color: #a8dadc;
       box-shadow: 0 1px 0 2px #b7b7b7, 0px 17px 46px -4px #1d3557;
       border-radius: 30px;

@@ -3,6 +3,10 @@ import "normalize.css";
 let cards = document.querySelectorAll(".card");
 let soundAllowed = true;
 let banner = document.querySelector(".banner");
+let bannerMain = banner.querySelector(".main");
+let bannerInfo = banner.querySelector(".info");
+
+console.log(bannerMain);
 
 cards.forEach((card) => {
   card.addEventListener("click", () => {
@@ -14,28 +18,14 @@ cards.forEach((card) => {
 });
 
 banner.addEventListener("click", () => {
-  let content;
   if (soundAllowed) {
-    content = ` 
-      <div class="main">
-        Silence 🔇  
-      </div>
-      <div class="info">
-        click to sound
-      </div>
-    `;
+    bannerMain.innerText = "Silence 🔇";
+    bannerInfo.innerText = "click to sound";
   } else {
-    content = ` 
-      <div class="main">
-        Sound Alert! 🔊
-      </div>
-      <div class="info">
-        click to mute
-      </div>
-    `;
+    bannerMain.innerText = "Sound Alert! 🔊";
+    bannerInfo.innerText = "click to mute";
   }
 
-  banner.innerHTML = content;
   soundAllowed = !soundAllowed;
 });
 

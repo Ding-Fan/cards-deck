@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1faee;
+  border: 12px solid #b7b7b7;
+  min-height: 100vh;
+}
+
+.container {
+  .banner {
+    cursor: pointer;
+    .main {
+      font-size: 50px;
+    }
+    background-color: blue;
+    
+    color: orange;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    .card {
+      width: 200px;
+      height: 300px;
+      background-color: #a8dadc;
+      box-shadow: 0 1px 0 2px #b7b7b7, 0px 17px 46px -4px #1d3557;
+      border-radius: 30px;
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      user-select: none;
+
+      .header {
+        font-family: "Comfortaa", cursive;
+        font-size: 30px;
+        color: #f1faee;
+        word-break: break-word;
+        text-align: center;
+      }
+
+      .subheader {
+        color: #f1faee;
+      }
+
+      .emoji {
+        font-size: 50px;
+      }
+
+      &.done {
+        box-shadow: 0 1px 0 2px #b7b7b7;
+
+        .reward {
+          color: #e63946;
+        }
+      }
+    }
+  }
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.mb20 {
+  margin-bottom: 20px;
+}
